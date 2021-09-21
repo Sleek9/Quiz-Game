@@ -1,10 +1,14 @@
-import "./App.css";
+import "./App.scss";
+
 import Quiz from "./components/Quiz";
+import { QuizProvider } from "./context/QuizContext";
 
 function App() {
   return (
     <div>
-      <Quiz />
+      <QuizProvider>
+        <Quiz />
+      </QuizProvider>
     </div>
   );
 }
