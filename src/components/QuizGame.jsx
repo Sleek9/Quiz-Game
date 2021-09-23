@@ -43,12 +43,12 @@ const QuizGame = () => {
     setNext(false);
 
     if (target.getAttribute("capital-value") === correctAnswer.capital) {
-      target.classList.add("correct");
       target.lastChild.classList.add("fa-check-circle");
+      target.classList.add("correct");
       setCorrectCount(correctCount + 1);
     } else {
-      target.classList.add("wrong");
       target.lastChild.classList.add("fa-times-circle");
+      target.classList.add("wrong");
     }
 
     setTimeout(() => {
