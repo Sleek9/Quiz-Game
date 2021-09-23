@@ -5,12 +5,12 @@ import { useHistory } from "react-router";
 import QuizContext from "../context/QuizContext";
 
 const QuizGame = () => {
-  const { inGame, resetGame } = useContext(QuizContext);
+  const { inGame, correctCount, setCorrectCount, maxQuestions } =
+    useContext(QuizContext);
   const { answers, response, setCountQuestion, countQuestions, correctAnswer } =
     useFetch();
 
   const history = useHistory();
-  const [correctCount, setCorrectCount] = useState(0);
   const [next, setNext] = useState(true);
 
   useEffect(() => {
@@ -21,11 +21,8 @@ const QuizGame = () => {
   }, [inGame, history]);
 
   const nextQuestion = () => {
-    if (countQuestions >= 4) {
-      alert("Juego terminado");
-      console.log(correctCount);
-      history.push("/");
-      resetGame();
+    if (countQuestions + 1 === maxQuestions) {
+      history.push("/finish");
       return;
     }
     setNext(true);
@@ -45,7 +42,7 @@ const QuizGame = () => {
     }
     setNext(false);
 
-    if (e.target.textContent === correctAnswer.capital) {
+    if (target.getAttribute("capital-value") === correctAnswer.capital) {
       target.classList.add("correct");
       target.lastChild.classList.add("fa-check-circle");
       setCorrectCount(correctCount + 1);
@@ -67,10 +64,13 @@ const QuizGame = () => {
           <h2>{`What is the capital of ${correctAnswer.name}?`}</h2>
           {answers.map((el, index) => {
             return (
-              <div className="quiz__items" key={index} onClick={handleAnswer}>
-                <button className="quiz__item" key={el}>
-                  {el.capital}
-                </button>
+              <div
+                className="quiz__items"
+                key={index}
+                capital-value={el.capital}
+                onClick={handleAnswer}
+              >
+                <button className="quiz__item">{el.capital}</button>
                 <i className="fas icon"></i>
               </div>
             );

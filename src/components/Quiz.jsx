@@ -7,6 +7,8 @@ import QuizContext from "../context/QuizContext";
 import Logo from "../img/undraw_adventure_4hum1.svg";
 import QuizMenu from "./QuizMenu";
 import QuizGame from "./QuizGame";
+import QuizFinish from "./QuizFinish";
+import QuizDifficulty from "./QuizDifficulty";
 
 const Quiz = () => {
   const { resetGame } = useContext(QuizContext);
@@ -35,6 +37,12 @@ const Quiz = () => {
               </Route>
               <Route exact path="/start">
                 <QuizGame />
+              </Route>
+              <Route exact path="/difficulty">
+                <QuizDifficulty />
+              </Route>
+              <Route exact path="/finish">
+                <QuizFinish />
               </Route>
             </Switch>
           </HashRouter>
