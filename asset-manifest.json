@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Quiz-Game/static/css/main.eb2c05c6.chunk.css",
+    "main.js": "/Quiz-Game/static/js/main.89f26c43.chunk.js",
+    "main.js.map": "/Quiz-Game/static/js/main.89f26c43.chunk.js.map",
+    "runtime-main.js": "/Quiz-Game/static/js/runtime-main.bea74fe1.js",
+    "runtime-main.js.map": "/Quiz-Game/static/js/runtime-main.bea74fe1.js.map",
+    "static/css/2.0975cee1.chunk.css": "/Quiz-Game/static/css/2.0975cee1.chunk.css",
+    "static/js/2.475c5832.chunk.js": "/Quiz-Game/static/js/2.475c5832.chunk.js",
+    "static/js/2.475c5832.chunk.js.map": "/Quiz-Game/static/js/2.475c5832.chunk.js.map",
+    "static/js/3.f0d62234.chunk.js": "/Quiz-Game/static/js/3.f0d62234.chunk.js",
+    "static/js/3.f0d62234.chunk.js.map": "/Quiz-Game/static/js/3.f0d62234.chunk.js.map",
+    "index.html": "/Quiz-Game/index.html",
+    "static/css/2.0975cee1.chunk.css.map": "/Quiz-Game/static/css/2.0975cee1.chunk.css.map",
+    "static/css/main.eb2c05c6.chunk.css.map": "/Quiz-Game/static/css/main.eb2c05c6.chunk.css.map",
+    "static/js/2.475c5832.chunk.js.LICENSE.txt": "/Quiz-Game/static/js/2.475c5832.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/Quiz-Game/static/media/background.41dbc550.png",
+    "static/media/undraw_adventure_4hum1.182b6171.svg": "/Quiz-Game/static/media/undraw_adventure_4hum1.182b6171.svg",
+    "static/media/undraw_winners_ao2o 2.d76bfdf8.svg": "/Quiz-Game/static/media/undraw_winners_ao2o 2.d76bfdf8.svg",
+    "static/media/worldwide.60bfee4c.svg": "/Quiz-Game/static/media/worldwide.60bfee4c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bea74fe1.js",
+    "static/css/2.0975cee1.chunk.css",
+    "static/js/2.475c5832.chunk.js",
+    "static/css/main.eb2c05c6.chunk.css",
+    "static/js/main.89f26c43.chunk.js"
+  ]
+}
